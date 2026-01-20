@@ -1,0 +1,63 @@
+.ttt-alt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #eaf6fb;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+.ttt-alt-container h2 {
+  color: #0a3d62;
+  margin-bottom: 10px;
+}
+.ttt-info {
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+  color: #1e3799;
+  font-weight: 600;
+}
+.ttt-board {
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  grid-gap: 6px;
+  margin-bottom: 18px;
+}
+.cell {
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  border: 2px solid #38ada9;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  color: #079992;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+.cell.win {
+  background: #f6e58d;
+  border-color: #f9ca24;
+  color: #b9770e;
+}
+.cell:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.ttt-reset {
+  margin-top: 8px;
+  padding: 8px 20px;
+  background: #38ada9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.ttt-reset:hover {
+  background: #079992;
+}
